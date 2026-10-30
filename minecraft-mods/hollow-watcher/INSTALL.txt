@@ -1,0 +1,30 @@
+HOLLOW WATCHER 0.1.0 — EXPERIMENTAL ALPHA
+Minecraft Java 1.20.1 / Forge 47.3.0 or compatible 47.3+
+
+Put hollowwatcher-1.20.1-0.1.0.jar in your Forge instance's mods folder.
+Use the same JAR on both client and dedicated server if testing multiplayer.
+No GeckoLib or extra animation library is required.
+
+TEST IN A NEW WORLD OR BACKUP FIRST.
+The creature can damage limited crops, farmland, wooden doors, gates, and glass.
+Run /gamerule mobGriefing false to disable its block damage.
+More options are in config/hollowwatcher-common.toml after the first launch.
+
+QUICK TEST WITH CHEATS ENABLED
+1. /time set night
+2. /give @s hollowwatcher:watcher_spawn_egg
+3. Spawn one creature roughly 20 blocks away, near trees or a windowed house.
+4. /gamemode survival
+It ignores creative/spectator players. Watch, investigate, and change routes.
+It escalates only after accumulating visible observations of the player.
+
+VERIFIED HERE
+- Full Forge compilation and reobfuscation.
+- 15 standalone memory-policy checks.
+- 14 resource checks.
+- Four tests inside Forge's headless Minecraft test server.
+
+STILL NEEDS HANDS-ON TESTING
+Custom model appearance/animation, live stalking and pathfinding, natural
+spawns, multiplayer balance, and compatibility with other mods.
+This is an early playable test artifact, not a polished final horror mod.
